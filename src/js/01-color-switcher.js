@@ -18,3 +18,10 @@ buttonStart.addEventListener('click', element => {
     bodyChangeColor.style.backgroundColor = getRandomHexColor();
   }, 1000);
 });
+
+buttonStop.addEventListener('click', element => {
+  element.target.setAttribute('disabled', true);
+  buttonStart.removeAttribute('disabled');
+
+  clearInterval(intervalId);
+});
