@@ -27,5 +27,23 @@ button {
 .container {
   position: absolute;
   top: 50%;
-  left: 50%; 
+  left: 50%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap {
+  gap: 25px;
+}
+.value {
+  font-size: 46px;
+  line-height: 1.1;
 }
